@@ -1,0 +1,326 @@
+/* Base Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    padding: 10px 20px;
+    border-bottom: 2px solid #000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px; /* Reduced gap between navigation items */
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+    font-size: 16px; /* Adjusted font size for better readability */
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05); /* Slightly less scaling effect */
+}
+
+/* Search Box Styling */
+.search-box {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.search-box input {
+    padding: 8px;
+    border: 2px solid #fff;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    transition: border-color 0.3s;
+    flex: 1;
+}
+
+.search-box input:focus {
+    border-color: #ff7e5f;
+}
+
+.search-box button {
+    padding: 8px 15px;
+    border: 2px solid #fff;
+    background-color: #ff7e5f;
+    border-radius: 0 5px 5px 0;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.search-box button:hover {
+    background-color: #feb47b;
+    transform: scale(1.05); /* Slightly less scaling effect */
+}
+
+/* Intro Section */
+.intro-section {
+    background-color: #fff;
+    padding: 20px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    margin: 20px;
+    text-align: center;
+    animation: fadeInUp 1s ease-out;
+}
+
+.intro-section h1 {
+    color: #ff7e5f;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.intro-section p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* News Title Section */
+.news-title-section {
+    text-align: center;
+    padding: 10px;
+    margin: 20px;
+    background-color: #a5ee1d;
+    border: 2px solid #000;
+    border-radius: 10px;
+    animation: fadeInUp 1s ease-out;
+}
+
+.news-title-section h2 {
+    color: #3662f1;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* News Section */
+.news-section {
+    border: 2px solid #000;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 20px;
+    animation: fadeInUp 1s ease-out;
+}
+
+.news-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    border: 2px solid #000; /* Optional: add border around the content */
+    padding: 20px; /* Optional: add padding for better spacing */
+    border-radius: 10px;
+    background-color: #fff; /* Optional: background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: shadow effect */
+}
+
+.news-picture {
+    flex: 1;
+    max-width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.news-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.news-details {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.anime-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff7e5f;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ff7e5f; /* Optional: underline effect */
+    padding-bottom: 5px;
+}
+
+.news-textbox {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.5;
+}
+
+/* Footer */
+footer {
+    background-color: #ff7e5f;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    border-top: 2px solid #000;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer button {
+    background-color: #fff;
+    border: 2px solid #feb47b;
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-weight: bold;
+    color: #ff7e5f;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    border-radius: 5px;
+}
+
+footer button:hover {
+    background-color: #ff7e5f;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+/* Animations */
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px; /* Reduced gap for smaller screens */
+        width: 100%;
+        text-align: center;
+    }
+
+    .search-box {
+        margin-top: 10px;
+        flex-direction: column;
+    }
+
+    .search-box input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .search-box button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    nav ul li a {
+        padding: 8px 10px;
+        font-size: 14px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .search-box input {
+        width: calc(100% - 32px); /* Adjust width considering button */
+    }
+
+    .search-box button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    nav ul li a {
+        padding: 8px 10px;
+        font-size: 12px;
+    }
+
+    .search-box input {
+        width: calc(100% - 32px); /* Adjust width considering button */
+    }
+
+    .search-box button {
+        width: 100%;
+        margin-top: 10px;
+    }
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime & Manga Hub</title>
+    <style>
+        /* Add your CSS styling here */
+        .section {
+            display: none;
+        }
+        .active {
+            display: block;
+        }
+        .nav-buttons {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-buttons">
+        <button onclick="showSection('anime')">Anime Updates</button>
+        <button onclick="showSection('manga')">Manga Reading</button>
+    </div>
+
+    <div id="anime" class="section active">
+        <h2>Latest Anime Updates</h2>
+        <!-- Anime updates content goes here -->
+        <p>Here you can display the latest anime news, episodes, etc.</p>
+    </div>
+
+    <div id="manga" class="section">
+        <h2>Read Manga</h2>
+        <!-- Manga reading content goes here -->
+        <p>Here you can display a manga reader or list of available manga.</p>
+    </div>
+
+    <script>
+        function showSection(sectionId) {
+            document.querySelectorAll('.section').forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+</body>
+</html>
