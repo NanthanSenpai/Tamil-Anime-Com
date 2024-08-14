@@ -85,6 +85,24 @@ nav ul li a:hover {
     transform: scale(1.05); /* Slightly less scaling effect */
 }
 
+/* Admin Login Icon Styling */
+.admin-login {
+    margin-left: 20px;
+}
+
+.admin-login img {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.admin-login img:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+
 /* Intro Section */
 .intro-section {
     background-color: #fff;

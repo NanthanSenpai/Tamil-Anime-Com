@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <div class="admin-panel">
+        <h1>Admin Panel</h1>
+        <form id="newsForm">
+            <label for="image">News Image URL:</label>
+            <input type="text" id="image" required>
+            
+            <label for="anime-title">Anime Title:</label>
+            <input type="text" id="anime-title" required>
+            
+            <label for="news-text">News Content:</label>
+            <textarea id="news-text" required></textarea>
+            
+            <button type="submit">Add News</button>
+        </form>
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+</html>

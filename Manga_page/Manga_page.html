@@ -9,7 +9,7 @@
 <body>
     <header>
         <nav>
-            <ul>
+            <ul class="nav-menu">
                 <li><a href="#">HOME</a></li>
                 <li><a href="../index.html">TAMIL DUB UPDATE</a></li>
                 <li><a href="#">ORIGINAL MANGA</a></li>
@@ -23,47 +23,13 @@
 
     <main>
         <h2>ORIGINAL MANGA COLLECTION</h2>
-        <div class="manga-grid">
-            <div class="manga-item" onclick="openManga('manga1')">
-                <img src="../images/manga1.jpg" alt="Manga 1">
-                <p>Manga Title 1</p>
-            </div>
-            <div class="manga-item" onclick="openManga('manga2')">
-                <img src="../images/manga2.jpg" alt="Manga 2">
-                <p>Manga Title 2</p>
-            </div>
-            <!-- Add more manga items as needed -->
-        </div>
-
-        <div id="manga-reader" class="section">
-            <div id="manga1" class="manga-content">
-                <h2>Manga Title 1</h2>
-                <img src="../images/manga1-page1.jpg" alt="Page 1">
-                <img src="../images/manga1-page2.jpg" alt="Page 2">
-                <!-- Add more pages as needed -->
-            </div>
-            <div id="manga2" class="manga-content">
-                <h2>Manga Title 2</h2>
-                <img src="../images/manga2-page1.jpg" alt="Page 1">
-                <img src="../images/manga2-page2.jpg" alt="Page 2">
-                <!-- Add more pages as needed -->
-            </div>
-        </div>
+        <!-- Manga content will go here -->
     </main>
 
     <footer>
         <button onclick="window.history.back()">Go Back</button>
-        <button>feedback</button>
-        <button>donate</button>
+        <button>Feedback</button>
+        <button>Donate</button>
     </footer>
-
-    <script>
-        function openManga(mangaId) {
-            document.querySelectorAll('.manga-content').forEach(content => {
-                content.style.display = 'none';
-            });
-            document.getElementById(mangaId).style.display = 'block';
-        }
-    </script>
 </body>
 </html>
